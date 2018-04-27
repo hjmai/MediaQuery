@@ -39,6 +39,7 @@ a{
 }
 /* Add a color to the active/current link */
 #portfolio{
+
     border-right: 1px solid gray;
 }
 #about{
@@ -49,8 +50,15 @@ a{
     color: #4aaaa5;
 }
 .contentHeader{
-    padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 5px;
     border-bottom: 2px solid #cccccc;
+}
+.mainBody{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .mainBody img{
     float: left;
@@ -104,6 +112,7 @@ body{
 }
 .portfolio{
     padding: 0;
+    margin-top: 30px;
     list-style-type: none;
     text-align: center;
 }
