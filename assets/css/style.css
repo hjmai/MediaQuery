@@ -4,30 +4,45 @@ a{
     text-decoration: none;
 }
 .navContent{
-    margin: 0 auto;
+    margin: 20px auto;
     width: 960px;
 }
 .topnav{
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     top: 0;
     width: 100%;
     background-color: #fff;
     overflow: hidden;
     border-bottom: 2px solid #cccccc;
-    padding-top: 3%;
     z-index: 1000;
 }
-.topnav span{
+.name{
     font-family: 'Georgia', 'Times', 'Times New Roman', 'Roboto', serif;
     color: white;
     background: #4aaaa5;
-    padding: 0px 15px 0px 15px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
     font-size: 30px;
 }
+#break{
+    display: none;
+}
 /* Style the links inside the navigation bar */
-.topnav a{
+.navItems{
     float: right;
+    list-style-type: none;
+    margin: 2px auto;
+    padding: 0;
+    margin: 2px auto;
+    line-height: 1.4;
+}
+.navItems li{
+    display: inline;
+}
+.navItems a{
     color: gray;
     text-align: center;
     padding-left: 10px;
@@ -38,13 +53,6 @@ a{
     color: #4aaaa5;
 }
 /* Add a color to the active/current link */
-#portfolio{
-
-    border-right: 1px solid gray;
-}
-#about{
-    border-right: 1px solid gray;
-}
 #header, h1, h2, h3, h4, h5, h6{
     font-family: 'Georgia', Times, Times New Roman, 'Montserrat', serif;
     color: #4aaaa5;
@@ -73,7 +81,7 @@ body{
     margin-bottom: 80px;
 }
 .contentWrapper{
-    margin-top: 8%;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -147,9 +155,31 @@ body{
 
 @media (max-width: 768px){
     .contentWrapper{
-        width: 100%;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .navContent{
         width: 100%;
+    }
+}
+
+@media (max-width: 640px){
+    #break{
+        display: block;
+    }
+    .navItems{
+        float: none;
+        text-align: center;
+    }
+    .navItems li{
+        background: white;
+    }
+    .name{
+        display: table;
+        margin: 0 auto;
+        margin-top: -20px;
+        width: 100%;
+        text-align: center;
     }
 }
